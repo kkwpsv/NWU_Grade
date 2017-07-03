@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "成绩查询";
+}
+@using NWU_Grade.Models
+@model GradeModel
+<h2 style="text-align:center">你的成绩</h2>
+    <div class="table-responsive" style="margin-top:10px">
+        <table class="table table-bordered" style="max-width:500px; margin:0 auto; ">
+            <tr>
+                <th>科目</th>
+                <th>分数</th>
+            </tr>
+            @foreach (var item in Model.Data)
+            {
+                <tr>
+                    <td>@item.Item1</td>
+                    <td>@item.Item2</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://219.245.18.61:81/KEY/MURPNewsService.asmx?wsdl" docRef="http://219.245.18.61:81/KEY/MURPNewsService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://219.245.18.61:81/KEY/MURPNewsService.asmx" xmlns:q1="http://murpcn.com/murpwebservice/" binding="q1:MURPNewsServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://219.245.18.61:81/KEY/MURPNewsService.asmx" xmlns:q2="http://murpcn.com/murpwebservice/" binding="q2:MURPNewsServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

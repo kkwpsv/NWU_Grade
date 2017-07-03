@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "成绩查询";
+}
+@using NWU_Grade.Models
+@model UserModel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { style = "max-width:300px; padding:15px; margin:0 auto; text-align:center" }))
+{
+    <h2 style="text-align:left">请输入你的信息</h2>
+    <div class="text-danger">@Html.ValidationMessage("")</div>
+    <div class="form-group">
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control", placeholder = "学号" })
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "姓名" })
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">查询</button>
+}
